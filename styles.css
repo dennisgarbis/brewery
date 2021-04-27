@@ -9,6 +9,14 @@
 .building img {
     width: 100%;
 }
+/*
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    width: 100px;
+}
+*/
 nav{
     background-color: #b3ddf2;
     text-transform: uppercase;
@@ -74,6 +82,8 @@ button:hover {
     transition: 700ms;
 }
 .beermenu {
+    background-image: url("images/beer-kettles.jpg");
+    background-size: contain;
     background-color: yellow;
     width: 50%;
 }
@@ -94,7 +104,8 @@ button:hover {
     width: 100%;
 }
 .foodmenu {
-    background-color: hotpink;
+    background-image: url("images/nachos-burger.jpg");
+    background-size: contain;
     width: 50%;
 }
 .menu {
