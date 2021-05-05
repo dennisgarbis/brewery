@@ -44,9 +44,10 @@ ol {
     }
 li a {
     text-decoration: none;
-    transition:  900ms ease-in-out;
-    animation: color 2s infinite;
+    /*transition:  900ms ease-in-out;
+    animation: color 2s infinite;*/
 }
+/*
 @keyframes color {
     25% {color: orange;}
     50% {color: green;}
@@ -56,13 +57,13 @@ li a {
 /* I added animation above to change color of text for nav*/
 
 li a:hover {
-    color: red;
+    color: white;
     background-color: rgba(10, 61, 9, 0.324);
     border-radius: 10px;
     text-decoration: underline;
 }
 li a:visited {
-    color: rgb(77, 8, 75);
+    color: darkred;
 }
 
 .flag > img {
@@ -72,17 +73,18 @@ li a:visited {
     display: flex;
 }
 button {
-    background-color: red;
-    color: lightsteelblue;
+    background-color: #b3ddf2;
     font-size: 16px;
-    border: 1px dashed green;
+    font-weight: bold;
+    border: 1px solid black;
     box-shadow: 1px 2px gray;
+    width: 45%;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
     margin-top: 80%;
     margin-bottom: 10%;
-    animation: border 4s infinite;
+    /*animation: border 4s infinite;
 }
 @keyframes border {
     25% { border: 1px dashed yellow;
@@ -93,21 +95,22 @@ button {
         border: 1px dashed green;
         color: yellow;
         background: orange;
-    }
+    }*/
 }
 button:hover {
-    background-color: lightsteelblue;
-    color: black;
-    border: 1px solid red;
+    background-color: red;
+    color: white;
+    border: 1px solid black;
     transition: 300ms;
-    opacity: .7;
 }
 button:active {
-    background-color: blue;
-    transform: rotateY(360deg);
-    transition: 500ms;
+    background-color: black;
+    color: red;
+    transform: rotateX(360deg);
+    transition: 400ms;
 
 }
+
 .beermenu {
     background-image: url("images/beer-kettles.jpg");
     background-size: contain;
@@ -185,7 +188,6 @@ button:active {
 }
 .girl2 .review {
     margin-top: 5px;
-    height: 100px;
 }
 .testimonials {
     display: flex;
@@ -202,11 +204,10 @@ button:active {
 }
 
 #contact {
-    background-image: url(images/kegs3.png);
+    background-color: rgb(211, 208, 208);
     background-size: 100%;
     display: flex;
     justify-content: space-between;
-    height: 325px;
     font-size: 24px;
     font-weight: 700;
     padding: 25px;
@@ -231,7 +232,6 @@ form td {
     padding: 15px;
 }
 label {
-    background-color: white;
     border-radius: 15px;
     padding: 5px;
 }
@@ -241,16 +241,17 @@ input {
     padding: 5px;
 }
 .submit {
-    background-color: rgb(75, 75, 189);
+    background-color: #b3ddf2;
+    font-weight: bold;
     margin-top: 20px;
     margin-left: 70%;
     padding: 10px;
     border-radius: 10px;
 }
 .submit:hover {
-    background-color: rgba(74, 74, 133, 0.62);
+    background-color: red;
     cursor: cell;
-    transform: rotateY(360deg);
+    transform: rotateX(360deg);
     transition: 500ms;
 }
 .submit:active {
@@ -340,6 +341,14 @@ footer{
     color: green;
     text-decoration: underline;
 }
+@media only scree and (max-width: 1220px) {
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+
 @media only screen and (max-width: 900px) {
     #wrapper {
         width: 100%;
@@ -354,40 +363,43 @@ footer{
     display: flex;
     flex-direction: column;
 }
+.testimonials img {
+    margin: 0px;
+}
+
 #reviews {
     font-size: 24px;
     font-weight: 600;
 }
 #reviews img {
-    width: 30%;
+    width: 40%;
 }
 .review {
     padding: 0px;
-    width: 50%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: -10px;
+    margin-top: 0px;
 }
 #contact {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 16px;
 }
 nav ol {
     display: flex;
     flex-direction: column;
 }
-nav li {
-    margin: 0px;
-}
+
 nav li {
     margin: 5px;
 }
 nav {
     position: initial;
 }
-#contact {
-    font-size: 16px;
-}
+
 .location img {
     width: 70%;
 }
