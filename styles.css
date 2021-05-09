@@ -6,9 +6,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
-html {
-    scroll-behavior: smooth;
-}
+
 .building img {
     width: 100%;
     opacity: .95;
@@ -55,80 +53,25 @@ li a {
     50% {color: green;}
     75% {color: white;}
 }
-
 /* I added animation above to change color of text for nav*/
-li a:visited {
-    color: red;
-}
+
 li a:hover {
-    color: blue;
-    background-color: rgb(255, 0, 0);
-    padding: 2px;
+    color: white;
+    background-color: rgba(10, 61, 9, 0.324);
     border-radius: 10px;
     text-decoration: underline;
-    transition: 200ms ease-in-out;
-    animation: back 2s 1;
-    margin: -2px;
 }
-@keyframes back {
-95% {
-    background-color: yellow;
-    color: black;
-    }
-}
-li a:active {
-    background-color: black;
-    color: white;
+li a:visited {
+    color: darkred;
 }
 
 .flag > img {
     width: 100%;
 }
-
-/*********** ------- MODAL CONTENT BELOW ------ ***************/
-/* The Modal (background) */
-.beermenu > .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .beermenu  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  
-  /* The Close Button */
-  .beermenu >.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-/*****************------- END OF MODAL CONTENT ------********/
 #beers{
     display: flex;
 }
-#beer-button {
+button {
     background-color: #b3ddf2;
     font-size: 16px;
     font-weight: bold;
@@ -140,9 +83,8 @@ li a:active {
     cursor: pointer;
     margin-top: 80%;
     margin-bottom: 10%;
-    /*animation: border 4s infinite;*/
+    /*animation: border 4s infinite;
 }
-/*
 @keyframes border {
     25% { border: 1px dashed yellow;
         color: black;
@@ -152,19 +94,20 @@ li a:active {
         border: 1px dashed green;
         color: yellow;
         background: orange;
-    }
-}*/
-#beer-button:hover {
+    }*/
+}
+button:hover {
     background-color: red;
     color: white;
     border: 1px solid black;
-    transition: 200ms;
+    transition: 300ms;
 }
-#beer-button:active {
+button:active {
     background-color: black;
     color: red;
-    /*transform: rotateX(360deg);
-    transition: 400ms;*/
+    transform: rotateX(360deg);
+    transition: 400ms;
+
 }
 
 .beermenu {
@@ -176,7 +119,7 @@ li a:active {
 .pints {
     width: 50%;
 }
-.pints video {
+.pints img {
     width: 100%;
 }
 #food {
@@ -193,44 +136,7 @@ li a:active {
     background-size: contain;
     width: 50%;
 }
-#food-button {
-    background-color: #b3ddf2;
-    font-size: 16px;
-    font-weight: bold;
-    border: 1px solid black;
-    box-shadow: 1px 2px gray;
-    width: 45%;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 80%;
-    margin-bottom: 10%;
-    /*animation: border 4s infinite;*/
-}
-/*
-@keyframes border {
-    25% { border: 1px dashed yellow;
-        color: black;
-        box-shadow: 1px 2px blue;
-    }
-    75% {
-        border: 1px dashed green;
-        color: yellow;
-        background: orange;
-    }
-}*/
-#food-button:hover {
-    background-color: red;
-    color: white;
-    border: 1px solid black;
-    transition: 200ms;
-}
-#food-button:active {
-    background-color: black;
-    color: red;
-    /*transform: rotateX(360deg);
-    transition: 400ms;*/
-}
+
 #fun {
     display: flex;
 }
@@ -434,23 +340,20 @@ footer{
     color: green;
     text-decoration: underline;
 }
-@media only screen and (max-width: 1220px) {
-#contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-}
 
-@media only screen and (max-width: 900px) {
-    #wrapper {
-        width: 100%;
-        border: 2px dashed red;
-    }
+@media only screen and (max-width: 1300px) {
+#wrapper {
+    width: 100%;
+    border: 2px dashed red;
+}
 .logo {
     top: 1%;
     left: 10px;
     width: 10%;
+}
+button {
+    font-size: .9rem;
+    padding: 2%;
 }
 .testimonials {
     display: flex;
@@ -465,11 +368,11 @@ footer{
     font-weight: 600;
 }
 #reviews img {
-    width: 40%;
+    width: 20%;
 }
 .review {
     padding: 0px;
-    width: 90%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -10px;
@@ -480,17 +383,6 @@ footer{
     flex-direction: column;
     align-items: center;
     font-size: 16px;
-}
-nav ol {
-    display: flex;
-    flex-direction: column;
-}
-
-nav li {
-    margin: 5px;
-}
-nav {
-    position: initial;
 }
 
 .location img {
@@ -505,4 +397,23 @@ input {
 .table {
     font-size: 14px;
 }
+}
+@media only screen and (max-width: 650px) {
+    nav ol {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin: 5px;
+    }
+    nav {
+        position: initial;
+    }
+    
+    button {
+        font-size: .5rem;
+        margin-bottom: 5%;
+        
+    }
 }
