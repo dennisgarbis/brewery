@@ -109,7 +109,6 @@ button:active {
     transition: 400ms;
 
 }
-
 .beermenu {
     background-image: url("images/beer-kettles.jpg");
     background-size: contain;
@@ -119,7 +118,7 @@ button:active {
 .pints {
     width: 50%;
 }
-.pints img {
+.pints video {
     width: 100%;
 }
 #food {
