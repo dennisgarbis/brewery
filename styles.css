@@ -468,7 +468,7 @@ input {
     }
     #modalButton, #modalButton2 {
         font-size: .5rem;
-        margin-bottom: 5%;        
+        margin-bottom: 5%;
     }
     .modal {
         display: none; /* Hidden by default */
