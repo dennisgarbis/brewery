@@ -30,10 +30,17 @@
         </nav>
         <div id="beers">
             <div class="beermenu">
-                <button> List of Our Beers</button>
+                <button id="modalButton"> List of Our Beers</button>
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span onclick="closeModal(1)" class="close">&times;</span> 
+                        <img src="images/beer-menu.png" alt="beer menu">
+                    </div>
+                </div>
             </div>
             <div class="pints">
-                <video autoplay controls>
+                <video autoplay>
                     <source src="videos/beer.mp4" type="video/mp4">
                     <source src="videos/beer.ogv" type="video/ogv">
                     Your browser is not compatible with these videos
@@ -45,14 +52,20 @@
 
         <div id="food">
             <div class="women">
-                <video autoplay controls>
+                <video autoplay>
                     <source src="videos/food.mp4" type="video/mp4">
                     <source src="videos/food.ogv" type="video/ogv">
                     Your browser needs updating if you cannot view video
                 </video>
             </div>
             <div class="foodmenu">
-                <button>Our Food Menu</button>
+                <button id="modalButton2">Our Food Menu</button>
+                <div id="myModal2" class="modal">
+                    <div class="modal-content">
+                        <span onclick="closeModal(2)" class="close">&times;</span>
+                        <img src="images/food-menu.jpg" alt="food menu">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="flag"><img src="images/flag2.jpg" alt="flag"></div>
@@ -170,6 +183,57 @@
 
 
     </div> <!-- end of wrapper-->
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var modal2 = document.getElementById("myModal2");
+
+
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("modalButton");
+        var btn2 = document.getElementById("modalButton2");
+
+
+
+        // When the user clicks the button, open the modal 
+        var closeModal = function(modalToClose) {
+
+            switch (modalToClose) {
+                case 1:
+                    modal.style.display = "none";
+                    break;
+                case 2:
+                    modal2.style.display = "none";
+                    break;
+            }
+
+        }
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+
+            modal.style.display = "block";
+        }
+        btn2.onclick = function() {
+            modal2.style.display = "block";
+        }
+
+
+        // When the user clicks on <span> (x), close the modal
+
+        // // When the user clicks anywhere outside of the modal, close it
+         window.onclick = function(event) {
+             if (event.target == modal) {
+                 modal.style.display = "none";
+             }
+             if (event.target == modal2) {
+                 modal2.style.display = "none";
+             }
+             
+         }
+    </script>
 </body>
 
 </html>

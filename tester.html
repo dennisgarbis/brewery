@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <!-- BUTTON 1 TEST -->
+    <div>
+        <button id="modalButton">BUTTON 1</button><!-- defines button name-->
+    </div>
+
+    <!-- BEGIN The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span onclick="closeModal(1)" class="close">&times;</span> TEST 1
+        </div>
+    </div>
+
+
+    <!-- END The Modal -->
+    <!-- END BUTTON 1 TEST -->
+
+
+
+
+
+
+    <!-- ///////////////////////////////////////////////////// -->
+
+
+    <!-- BUTTON 2 TEST -->
+    <div>
+        <button id="modalButton2">BUTTON 2</button><!-- defines button name-->
+    </div>
+
+    <!-- BEGIN The Modal -->
+    <div id="myModal2" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span onclick="closeModal(2)" class="close">&times;</span> TEST 2
+        </div>
+    </div>
+
+
+    <!-- END The Modal -->
+    <!-- END BUTTON 2 TEST -->
+
+
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var modal2 = document.getElementById("myModal2");
+
+
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("modalButton");
+        var btn2 = document.getElementById("modalButton2");
+
+
+
+        // When the user clicks the button, open the modal 
+        var closeModal = function(modalToClose) {
+
+            switch (modalToClose) {
+                case 1:
+                    modal.style.display = "none";
+                    break;
+                case 2:
+                    modal2.style.display = "none";
+                    break;
+            }
+
+        }
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+
+            modal.style.display = "block";
+        }
+        btn2.onclick = function() {
+            modal2.style.display = "block";
+        }
+
+
+        // When the user clicks on <span> (x), close the modal
+
+        // // When the user clicks anywhere outside of the modal, close it
+         window.onclick = function(event) {
+             if (event.target == modal) {
+                 modal.style.display = "none";
+             }
+             if (event.target == modal2) {
+                 modal2.style.display = "none";
+             }
+             
+         }
+    </script>
+
+
+
+
+
+
+
+</body>
+
+
+</html>
