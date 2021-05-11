@@ -443,7 +443,7 @@ input {
     font-size: 14px;
 }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     nav ol {
         display: flex;
         flex-direction: column;
@@ -490,7 +490,7 @@ input {
         padding: 0px;
         width: auto; /* Could be more or less, depending on screen size */
       }
-      .modal-content {
+      .modal-content img {
           width: 75%;
       }
       /* The Close Button */
