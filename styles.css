@@ -134,7 +134,7 @@ li a:hover {
     width: 50%; /* Could be more or less, depending on screen size */
   }
   .modal-content img {
-      width: 75%;
+      width: 90%;
   }
   /* The Close Button */
   .close {
