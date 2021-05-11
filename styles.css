@@ -6,7 +6,9 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
-
+html {
+	scroll-behavior: smooth;
+}
 .building img {
     width: 100%;
     opacity: .95;
