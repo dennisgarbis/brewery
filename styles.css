@@ -445,7 +445,7 @@ input {
     font-size: 14px;
 }
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 610px) {
     #wrapper {
         border: 1px solid green;
     }
