@@ -16,8 +16,8 @@ html {
 
 .logo {
     position: fixed;
-    top: 2px;
-    left: 225px;
+    top: .4%;
+    left: 12%;
     width: 80px;
     z-index: 1;
 }
@@ -395,7 +395,7 @@ footer{
 }
 .logo {
     top: 1%;
-    left: 10px;
+    left: 5%;
     width: 10%;
 }
 button {
@@ -445,9 +445,9 @@ input {
     font-size: 14px;
 }
 }
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 750px) {
     #wrapper {
-        border: 1px solid green;
+        border: 5px solid green;
     }
     nav ol {
         display: flex;
@@ -472,7 +472,7 @@ input {
         margin: auto;
     }
     #modalButton, #modalButton2 {
-        font-size: .5rem;
+        font-size: .9rem;
         margin-bottom: 5%;
     }
     
