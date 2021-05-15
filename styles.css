@@ -353,7 +353,7 @@ footer{
 .col1 a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
 }
 .col1 a:hover {
     color: green;
@@ -478,7 +478,7 @@ input {
         padding-bottom: 5%;
     }
     #modalButton, #modalButton2 {
-        font-size: 10px;
+        font-size: 8px;
     }
     .modal-content img {
         width: 120%;
@@ -490,5 +490,8 @@ input {
     .copyright {
         font-size: 12px;
         margin: 0px;
+    }
+    .col1 a {
+        font-size: 14px;
     }
 }
