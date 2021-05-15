@@ -253,10 +253,10 @@ li a:hover {
     background-color: rgb(211, 208, 208);
     background-size: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 24px;
     font-weight: 700;
-    padding: 25px;
+    padding: 2%;
 }
 .location {
     margin: 10px;
@@ -410,11 +410,11 @@ button {
 }
 
 #reviews {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
 }
 #reviews img {
-    width: 20%;
+    width: 30%;
 }
 .review {
     padding: 0px;
@@ -445,7 +445,6 @@ input {
 }
 }
 @media only screen and (max-width: 700px) {
-
     nav ol {
         display: flex;
         flex-direction: column;
@@ -472,7 +471,7 @@ input {
         font-size: .9rem;
         margin-bottom: 5%;
     }
-    .hours {
+    .open {
         margin-bottom: 5%;
     }
 }
