@@ -477,3 +477,8 @@ input {
     }
     
 }
+@media only screen and (max-width: 600px) {
+    #wrapper {
+        border: 2px solid blue;
+    }
+}
