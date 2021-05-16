@@ -17,7 +17,7 @@ html {
 .logo {
     position: fixed;
     top: 2px;
-    left: 250px;
+    left: 12.5%;
     width: 80px;
     z-index: 1;
 }
@@ -421,7 +421,6 @@ button {
 .testimonials img {
     margin: 0px;
 }
-
 #reviews {
     font-size: 24px;
     font-weight: 600;
@@ -444,7 +443,6 @@ button {
     align-items: center;
     font-size: 16px;
 }
-
 .location img {
     width: 70%;
 }
@@ -457,74 +455,65 @@ input {
 .table {
     font-size: 14px;
 }
-}@media only screen and (max-width: 1000px) {
-    #wrapper {
-        border: 4px solid yellow;
-    }
-}
-@media only screen and (max-width: 900px) {
-    #wrapper {
-        border: 4px solid green;
-    }
-}
+
 @media only screen and (max-width: 700px) {
-    #wrapper {
-        border: 4px solid red;
+#wrapper {
+    border: 1px solid red;
+}
+nav ol {
+    display: flex;
+    flex-direction: column;
+}
+nav li {
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav {
+    font-size: 14px;
+    position: initial;
     }
-    nav ol {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    nav li {
-        margin: 5px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    a {
-        margin: 0px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    nav {
-        font-size: 14px;
-        position: initial;
-    }
-    .links {
-        margin: auto;
-    }
-    .hours {
-        padding-bottom: 5%;
-    }
-    #modalButton, #modalButton2 {
-        font-size: 8px;
-        padding: 5px;
-    }
-    .modal-content img {
-        width: 120%;
-    }
-    .icons {
-        width: 40%;
-        margin-left: 25%;
-    }
-    .copyright {
-        font-size: 12px;
-        margin: 0px;
-    }
-    .col1 {
-        width: 15%;
-    }
-    .col1 a {
-        font-size: 14px;
-    }
-    .col2 {
-        width: 85%;
-    }
-    .icons {
-        margin-left: 5%;
-        width: 90%;
-    }
-    .icons img {
-        width: 45%;
-    }
+.links {
+    margin: auto;
+}
+.hours {
+    padding-bottom: 5%;
+}
+#modalButton, #modalButton2 {
+    font-size: 8px;
+    padding: 5px;
+}
+.modal-content img {
+    width: 120%;
+}
+.icons {
+    width: 40%;
+    margin-left: 25%;
+}
+.copyright {
+    font-size: 12px;
+    margin: 0px;
+}
+.col1 {
+    width: 15%;
+}
+.col1 a {
+    font-size: 14px;
+}
+.col2 {
+    width: 85%;
+}
+.icons {
+    margin-left: 5%;
+    width: 90%;
+}
+.icons img {
+    width: 45%;
+}
+}
 }
