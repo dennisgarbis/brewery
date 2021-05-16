@@ -486,6 +486,7 @@ input {
     }
     #modalButton, #modalButton2 {
         font-size: 8px;
+        padding: 5px;
     }
     .modal-content img {
         width: 120%;
