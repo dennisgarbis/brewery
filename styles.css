@@ -457,6 +457,10 @@ input {
 .table {
     font-size: 14px;
 }
+}@media only screen and (max-width: 1000px) {
+    #wrapper {
+        border: 4px solid yellow;
+    }
 }
 @media only screen and (max-width: 900px) {
     #wrapper {
